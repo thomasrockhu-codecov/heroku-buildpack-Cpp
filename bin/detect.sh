@@ -2,4 +2,6 @@
 # bin/detect <build-dir>
 BUILD_DIR=$1
 cd $BUILD_DIR
-ls -U *.cc > /dev/null 2>&1 && (echo "CPP") || exit 1
+echo 'Detecting'
+exit 0
+# ls -U *.cc > /dev/null 2>&1 && (echo "CPP") || exit 1

@@ -10,6 +10,8 @@ cd $BUILD_DIR
 
 echo "-----> $BUILD_DIR"
 
-make
+sudo apt-get install llvm build-essential clang python-dev libc++-dev cmake libxml++
+
+cd release && cmake . && make
 
 echo "-----> Compilation done"

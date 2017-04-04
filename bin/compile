@@ -10,7 +10,7 @@ cd $BUILD_DIR
 
 echo "-----> $BUILD_DIR"
 
-sudo apt-get install llvm build-essential clang python-dev libc++-dev cmake libxml++
+apt-get install llvm build-essential clang python-dev libc++-dev cmake libxml++
 
 cd release && cmake . && make
 

@@ -6,12 +6,5 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
-cd $BUILD_DIR
-
-echo "-----> $BUILD_DIR"
-
-apt-get install llvm build-essential clang python-dev libc++-dev cmake libxml++
-
-cd release && cmake . && make
-
+cd $BUILD_DIR && make
 echo "-----> Compilation done"

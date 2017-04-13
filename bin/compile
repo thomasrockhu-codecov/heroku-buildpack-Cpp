@@ -6,5 +6,5 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
-cd /app/.heroku/src/cc-report-processing/ && make
+cd /app/.heroku/src/ccreportprocessing/ && make
 echo "-----> Compilation done"
